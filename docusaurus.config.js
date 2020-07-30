@@ -90,8 +90,8 @@ module.exports = {
               to: "docs/denon/home",
             },
             {
-              label: "Plug",
-              to: "docs/plug/home",
+              label: "Webview",
+              to: "docs/webview/home",
             },
           ],
         },
