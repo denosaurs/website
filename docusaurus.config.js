@@ -34,39 +34,39 @@ module.exports = {
           position: "left",
           items: [
             {
-              label: "DDoc",
+              label: "📑 DDoc",
               to: "docs/ddoc/home",
             },
             {
-              label: "Plug",
+              label: "🔌 Plug",
               to: "docs/plug/home",
             },
             {
-              label: "Cache",
+              label: "🥌 Cache",
               to: "docs/cache/home",
             },
             {
-              label: "Status",
+              label: "🗿 Status",
               to: "docs/status/home",
             },
             {
-              label: "Brotli",
+              label: "🗜 Brotli",
               to: "docs/brotli/home",
             },
             {
-              label: "Lz4",
+              label: "🗜 Lz4",
               to: "docs/lz4/home",
             },
             {
-              label: "Wasabi",
+              label: "🍣 Wasabi",
               to: "docs/wasabi/home",
             },
             {
-              label: "Parry",
+              label: "👷🏽‍♂️ Parry",
               to: "docs/parry/home",
             },
             {
-              label: "Algebra",
+              label: "➗ Algebra",
               to: "docs/algebra/home",
             },
           ],
