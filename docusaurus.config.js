@@ -1,7 +1,7 @@
 module.exports = {
   title: "Denosaurs",
   tagline: "deno.land module wizards",
-  url: "https://denosaurs.land",
+  url: "https://denosaurs.land/website",
   baseUrl: "/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.ico",
