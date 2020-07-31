@@ -3,7 +3,7 @@ module.exports = {
     {
       type: "category",
       label: "Denon",
-      items: ["denon/home", "denon/installation", "denon/usage"],
+      items: ["denon/home", "denon/installation", "denon/usage", "denon/contributing"],
     },
     {
       type: "category",
