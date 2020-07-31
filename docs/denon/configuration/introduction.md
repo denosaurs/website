@@ -67,8 +67,8 @@ scripts:
 
 ```typescript title="template for denon.config.ts"
 import { DenonConfig } from "https://deno.land/x/denon/mod.ts";
-
-const config: DenonConfig = {
+// ^ imports will be removed for semplicity in the next examples
+export default <DenonConfig>{
   scripts: {
     start: {
       cmd: "deno run app.ts",
@@ -76,8 +76,6 @@ const config: DenonConfig = {
     },
   },
 };
-
-export default config;
 ```
 
 </TabItem>
