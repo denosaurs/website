@@ -134,7 +134,7 @@ module.exports = {
           homePageId: "nope",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/denosaurs/website/edit/master/website/",
+          editUrl: "https://github.com/denosaurs/website/edit/master/",
           // Equivalent to `enableUpdateBy`.
           showLastUpdateAuthor: true,
           // Equivalent to `enableUpdateTime`.
@@ -144,7 +144,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/website/edit/master/website/blog/",
+            "https://github.com/facebook/website/edit/master/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
