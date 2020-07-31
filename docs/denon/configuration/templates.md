@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Templates
 ---
 
 import Tabs from '@theme/Tabs';

@@ -113,7 +113,6 @@ values={[
 <TabItem value="yaml">
 
 ```yml title="denon.yml"
-
 scripts:
   start:
     cmd: "deno run app.ts"
@@ -128,10 +127,8 @@ scripts:
       - env
       - write
     unstable: true
-
 # running `denon start` will resolve in
 # deno run --allow-env --allow-write --unstable app.ts
-
 ```
 
 </TabItem>
@@ -150,12 +147,12 @@ export default <DenonConfig>{
       // available options...
       // they are described in the next paragraph
       allow: ["env", "write"],
-      unstable: true
+      unstable: true,
 
       // running `denon start` will resolve in
       // deno run --allow-env --allow-write --unstable app.ts
-    }
-  }
+    },
+  },
 };
 ```
 
@@ -202,7 +199,6 @@ values={[
 <TabItem value="yaml">
 
 ```yml title="denon.yml"
-
 # globally applied to all scripts:
 env:
   TOKEN: "super secret token"
@@ -216,7 +212,6 @@ scripts:
     # `start` script
     env:
       PORT: 3000
-
 ```
 
 </TabItem>
@@ -225,7 +220,7 @@ scripts:
 ```typescript title="denon.config.ts"
 export default <DenonConfig>{
   // globally applied to all scripts
-  env: { "TOKEN": "SUPER SECRET TOKEN" },
+  env: { TOKEN: "SUPER SECRET TOKEN" },
 
   scripts: {
     start: {
@@ -234,9 +229,9 @@ export default <DenonConfig>{
 
       // made available only in the
       // `start` script
-      env: { "PORT": 3000 }
-    }
-  }
+      env: { PORT: 3000 },
+    },
+  },
 };
 ```
 
@@ -338,12 +333,12 @@ export default <DenonConfig>{
   // as object ...
   allow: {
     read: "/etc,/tmp", // --allow-read=/etc,/tmp
-    env: true // --allow-env
+    env: true, // --allow-env
   },
   // ... or as array
   allow: [
     "run", // --allow-run
-    "net" // --allow-net
+    "net", // --allow-net
   ],
 
   scripts: {
@@ -354,15 +349,15 @@ export default <DenonConfig>{
       // as object ...
       allow: {
         read: "/etc,/tmp", // --allow-read=/etc,/tmp
-        env: true // --allow-env
+        env: true, // --allow-env
       },
       // ... or as array
       allow: [
         "run", // --allow-run
-        "net" // --allow-net
-      ]
-    }
-  }
+        "net", // --allow-net
+      ],
+    },
+  },
 };
 ```
 
@@ -406,7 +401,6 @@ values={[
 <TabItem value="yaml">
 
 ```yml title="denon.yml"
-
 # globally applied to all scripts
 # not denon will essentially be a script runner
 watch: false
@@ -417,10 +411,6 @@ scripts:
 
   # you can still enable watch on a script-by-script basis
   watch: false
-
-
-
-
 ```
 
 </TabItem>
@@ -438,9 +428,9 @@ export default <DenonConfig>{
       desc: "Run the main server.",
 
       // you can still enable watch on a script-by-script basis
-      watch: true
-    }
-  }
+      watch: true,
+    },
+  },
 };
 ```
 
@@ -482,16 +472,11 @@ values={[
 <TabItem value="yaml">
 
 ```yml title="denon.yml"
-
 scripts:
   cmd: deno run app.ts
   desc: Run the main server.
 
   importmap: "importmap.json"
-
-
-
-
 ```
 
 </TabItem>
@@ -504,9 +489,9 @@ export default <DenonConfig>{
       cmd: "deno run app.ts",
       desc: "Run the main server.",
 
-      importmap: "importmap.json"
-    }
-  }
+      importmap: "importmap.json",
+    },
+  },
 };
 ```
 
@@ -544,16 +529,11 @@ values={[
 <TabItem value="yaml">
 
 ```yml title="denon.yml"
-
 scripts:
   cmd: deno run app.ts
   desc: Run the main server.
 
   tsconfig: "tsconfig.json"
-
-
-
-
 ```
 
 </TabItem>
@@ -566,9 +546,9 @@ export default <DenonConfig>{
       cmd: "deno run app.ts",
       desc: "Run the main server.",
 
-      tsconfig: "tsconfig.json"
-    }
-  }
+      tsconfig: "tsconfig.json",
+    },
+  },
 };
 ```
 
@@ -606,16 +586,11 @@ values={[
 <TabItem value="yaml">
 
 ```yml title="denon.yml"
-
 scripts:
   cmd: deno run app.ts
   desc: Run the main server.
 
   unstable: true
-
-
-
-
 ```
 
 </TabItem>
@@ -628,9 +603,9 @@ export default <DenonConfig>{
       cmd: "deno run app.ts",
       desc: "Run the main server.",
 
-      unstable: true
-    }
-  }
+      unstable: true,
+    },
+  },
 };
 ```
 
@@ -696,9 +671,9 @@ export default <DenonConfig>{
 
       inspect: "127.0.0.1:9229",
       // OR
-      inspectBrk: "127.0.0.1:9229"
-    }
-  }
+      inspectBrk: "127.0.0.1:9229",
+    },
+  },
 };
 ```
 
@@ -736,16 +711,11 @@ values={[
 <TabItem value="yaml">
 
 ```yml title="denon.yml"
-
 scripts:
   cmd: deno run app.ts
   desc: Run the main server.
 
   lock: "lock.json"
-
-
-
-
 ```
 
 </TabItem>
@@ -758,9 +728,9 @@ export default <DenonConfig>{
       cmd: "deno run app.ts",
       desc: "Run the main server.",
 
-      lock: "lock.json"
-    }
-  }
+      lock: "lock.json",
+    },
+  },
 };
 ```
 
@@ -798,16 +768,11 @@ values={[
 <TabItem value="yaml">
 
 ```yml title="denon.yml"
-
 scripts:
   cmd: deno run app.ts
   desc: Run the main server.
 
   cert: "cert.pem"
-
-
-
-
 ```
 
 </TabItem>
@@ -820,9 +785,9 @@ export default <DenonConfig>{
       cmd: "deno run app.ts",
       desc: "Run the main server.",
 
-      cert: "cert.pem"
-    }
-  }
+      cert: "cert.pem",
+    },
+  },
 };
 ```
 
@@ -860,15 +825,11 @@ values={[
 <TabItem value="yaml">
 
 ```yml title="denon.yml"
-
 scripts:
   cmd: deno run app.ts
   desc: Run the main server.
 
   log: "debug" # or "info"
-
-
-
 
 ```
 
@@ -882,9 +843,9 @@ export default <DenonConfig>{
       cmd: "deno run app.ts",
       desc: "Run the main server.",
 
-      log: "debug" // or "info"
-    }
-  }
+      log: "debug", // or "info"
+    },
+  },
 };
 ```
 

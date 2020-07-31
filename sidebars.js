@@ -3,7 +3,7 @@ module.exports = {
     {
       type: "category",
       label: "Denon",
-      items: ["denon/home", "denon/installation", "denon/usage", "denon/contributing"],
+      items: ["denon/home", "denon/installation", "denon/usage"],
     },
     {
       type: "category",
@@ -13,13 +13,14 @@ module.exports = {
           type: "category",
           label: "Configuration",
           items: [
-            "denon/configuration/introduction",
+            "denon/configuration/templates",
             "denon/configuration/script",
             "denon/configuration/watcher",
             "denon/configuration/logger",
           ],
         },
         "denon/module",
+        "denon/contributing",
       ],
     },
   ],
