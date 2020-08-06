@@ -17,14 +17,14 @@ values={[
 <TabItem value="official">
 
 ```bash
-deno install -A -f --unstable https://deno.land/x/denon@2.3.0/denon.ts
+deno install -qA -f --unstable https://deno.land/x/denon@2.3.2/denon.ts
 ```
 
 </TabItem>
 <TabItem value="nest">
 
 ```bash
-deno install -A -f --unstable https://x.nest.land/denon@2.3.0/denon.ts
+deno install -qA -f --unstable https://x.nest.land/denon@2.3.2/denon.ts
 ```
 
 </TabItem>
