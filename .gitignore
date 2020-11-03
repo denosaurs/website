@@ -7,6 +7,7 @@
 # Generated files
 .docusaurus
 .cache-loader
+/docs
 
 # Misc
 .DS_Store
@@ -14,6 +15,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.vscode
 
 npm-debug.log*
 yarn-debug.log*

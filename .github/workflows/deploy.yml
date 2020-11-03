@@ -11,6 +11,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
+      - uses: denolib/setup-deno@v2
+        with:
+          deno-version: v1.x
       - name: Test Build
         run: |
           if [ -e yarn.lock ]; then
@@ -20,6 +23,7 @@ jobs:
           else
           npm i
           fi
+          deno run -A --unstable scripts/setup.ts ${{ secrets.GITHUB_TOKEN }}
           npm run build
   gh-release:
     if: github.event_name != 'pull_request'
@@ -31,6 +35,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
+      - uses: denolib/setup-deno@v2
+        with:
+          deno-version: v1.x
       - name: Add key to allow access to repository
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
@@ -58,4 +65,5 @@ jobs:
           else
           npm i
           fi
+          deno run -A --unstable scripts/setup.ts ${{ secrets.GITHUB_TOKEN }}
           npx docusaurus deploy

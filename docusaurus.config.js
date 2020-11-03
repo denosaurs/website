@@ -24,7 +24,7 @@ module.exports = {
           label: "Denon",
           position: "left",
         },
-        {
+        /* {
           to: "docs/webview/home",
           label: "Webview",
           position: "left",
@@ -70,7 +70,7 @@ module.exports = {
               to: "docs/algebra/home",
             },
           ],
-        },
+        }, */
         { to: "blog", label: "Blog", position: "right" },
         {
           href: "https://github.com/denosaurs",
@@ -89,10 +89,10 @@ module.exports = {
               label: "Denon",
               to: "docs/denon/home",
             },
-            {
+            /* {
               label: "Webview",
               to: "docs/webview/home",
-            },
+            }, */
           ],
         },
         {
@@ -143,8 +143,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/facebook/website/edit/master/blog/",
+          editUrl: "https://github.com/facebook/website/edit/master/blog/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
